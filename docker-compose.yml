@@ -1,0 +1,7 @@
+services:
+  render:
+    build: .
+    working_dir: /work
+    volumes:
+      - .:/work
+    command: ["/characters/*"]

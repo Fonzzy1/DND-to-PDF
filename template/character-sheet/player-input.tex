@@ -1,4 +1,6 @@
-\newcommand{\addplus}[1]{\IfBeginWith{#1}{-}{#1}{+#1}}
+\newcommand{\addplus}[1]{%
+  \IfBeginWith{#1}{-}{#1}{+#1}%
+}
 
 % CHARACTER NAME
 \rput[cc](191.61106163,960.86850934){\begin{fitbox}{10cm}{18pt}{\LARGE} \centering \entryfont \textcolor{text-color}{\CharacterNameValue} \end{fitbox}}
@@ -80,8 +82,7 @@
 % FREEFORM ENTRY
 
 % ATTACKS AND SPELLCASTING
-\IfPackageLoadedTF{dnd}
-{
+\IfPackageLoadedTF{dnd}{%
 	\rput[lt](296,576){\parbox{167pt}{\justify\entryfont
 			\begin{DndTable}{Xll}
 				\tiny \textcolor{tertiary-indicator-color}{\textsf{NAME}}        &
@@ -91,9 +92,8 @@
 			\end{DndTable}
 			\textcolor{text-color}{\AttacksAdditionalValue}
 		}
-	}
-}
-{
+	}%
+}{%
 	\rput[lt](296,552){\parbox{167pt}{\entryfont
 			\begin{tabular}{lll}
 				\tiny \textcolor{tertiary-indicator-color}{\textsf{NAME}}        &
@@ -103,7 +103,7 @@
 			\end{tabular}
 			\textcolor{text-color}{\AttacksAdditionalValue}
 		}
-	}
+	}%
 }
 \rput[lt](37,220){\begin{fitbox}{168pt}{4.65cm}{\normalsize} \entryfont \justify \textcolor{text-color}{\OtherProficienciesLanguagesValue} \end{fitbox}}
 \rput[lt](353,264){\begin{fitbox}{118pt}{5.8cm}{\normalsize} \entryfont \justify \textcolor{text-color}{\EquipmentValue} \end{fitbox}}

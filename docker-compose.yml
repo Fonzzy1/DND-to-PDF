@@ -2,6 +2,6 @@ services:
   render:
     build: .
     working_dir: /work
+    entrypoint: ["python3", "-m", "scripts.render"]
     volumes:
-      - .:/work
-    command: ["/characters/*"]
+      - ${SYS_DIR:-.}:/work

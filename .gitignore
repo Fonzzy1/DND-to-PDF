@@ -283,3 +283,6 @@ TSWLatexianTemp*
 
 # LaTeX linter atifacts
 **.bak0
+/characters/__pycache__
+/py/__pycache__
+/scripts/__pycache__

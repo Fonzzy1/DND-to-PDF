@@ -76,6 +76,15 @@ all_classes = [
 
 pebble = Character(
     name="Pebble",
+
+    personality  = """1. I'm old enough to know better, experienced enough to do it anyway, and tired enough to complain about it. I meet most things with dry humour and a healthy dose of cynicism.
+
+    2. I get on well enough with ordinary folk, especially people who remind me of home. Ask if I'm all right, though, and you'll get a joke for an answer.""",
+    ideals = """Responsibility. Gods, governments, and commanders are all very good at explaining why someone else should bear the cost of their decisions. I make my own calls now. If someone has to pay for them, I won't pretend the responsibility belongs to anyone else.""",
+    bonds = """Home. I still dream of retiring in the village where I grew up. I tell myself I need to make it safe before I return. There is always another threat to deal with, and perhaps that's just as well — I wouldn't know what to do with myself if I ever got there.""",
+    flaws = """1. I cannot leave well enough alone. I insist on doing things my way, ignore advice I don't fancy, and struggle to trust anyone else with control — even when they're better suited to the task.
+
+    2. I hide behind the job. When things get personal, I make a joke, change the subject, or find the next piece of work. It's easier to be useful than to work out who I am without a purpose.""",
     abilities={
         "strength": 10,
         "dexterity": 14,
